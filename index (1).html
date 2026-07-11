@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Shine Products — Corian & Acrylic Solid Surface Manufacturers, Mumbai</title>
+<meta name="description" content="Silver Shine Products — Mumbai's trusted manufacturer of Corian and acrylic solid surface sheets for 25 years. Countertops, wash basins, wall cladding & custom fabrication.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F3EE;
+    --paper-2:#FFFFFF;
+    --ink:#1A1917;
+    --ink-soft:#57534C;
+    --steel:#767C80;
+    --steel-light:#C7CBCC;
+    --line:#DEDAD2;
+    --brass:#A9814B;
+    --brass-dark:#8B6A3A;
+    --radius:2px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  h1,h2,h3,h4{font-family:'Space Grotesk', sans-serif; font-weight:600; letter-spacing:-0.01em; color:var(--ink);}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass-dark);
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--brass-dark); display:inline-block;}
+  section{padding:96px 0;}
+  @media (max-width:720px){ section{padding:64px 0;} .wrap{padding:0 22px;} }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:14px 26px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    border-radius:var(--radius);
+    border:1px solid var(--ink);
+    transition:all .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--ink); color:var(--paper-2); }
+  .btn-primary:hover{ background:var(--brass-dark); border-color:var(--brass-dark); }
+  .btn-ghost{ background:transparent; color:var(--ink); }
+  .btn-ghost:hover{ background:var(--ink); color:var(--paper-2); }
+  .btn-brass{ background:var(--brass); border-color:var(--brass); color:#fff; }
+  .btn-brass:hover{ background:var(--brass-dark); border-color:var(--brass-dark); }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(245,243,238,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
+  .logo{ display:flex; flex-direction:column; line-height:1.1; }
+  .logo .name{ font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:19px; letter-spacing:0.01em; }
+  .logo .tag{ font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:0.12em; color:var(--steel); text-transform:uppercase; margin-top:3px;}
+  .navlinks{ display:flex; gap:34px; align-items:center; }
+  .navlinks a{ font-size:14.5px; color:var(--ink-soft); position:relative; padding-bottom:3px;}
+  .navlinks a:hover{ color:var(--ink); }
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--brass-dark);transition:width .25s ease;}
+  .navlinks a:hover::after{width:100%;}
+  .navcall{ display:flex; align-items:center; gap:16px; }
+  .navcall .phone{ font-family:'IBM Plex Mono', monospace; font-size:14px; }
+  .menu-toggle{ display:none; }
+  @media (max-width:880px){
+    .navlinks{ display:none; }
+    .navcall .phone{ display:none; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding:88px 0 60px; overflow:hidden; }
+  .hero-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center; }
+  @media (max-width:940px){ .hero-grid{ grid-template-columns:1fr; } }
+  .hero h1{
+    font-size:clamp(38px, 5.4vw, 66px);
+    line-height:1.02;
+    margin:22px 0 24px;
+  }
+  .hero h1 em{ font-style:normal; color:var(--brass-dark); }
+  .hero p.lead{ font-size:17.5px; color:var(--ink-soft); max-width:480px; margin-bottom:34px; }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:38px;}
+  .hero-meta{ display:flex; gap:34px; font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--steel); flex-wrap:wrap;}
+  .hero-meta div{ padding-left:14px; border-left:2px solid var(--brass); }
+
+  /* signature: swatch fan */
+  .swatch-stage{ position:relative; height:420px; }
+  .fan{ position:relative; width:100%; height:100%; }
+  .swatch{
+    position:absolute;
+    width:150px; height:340px;
+    top:36px; left:50%;
+    border-radius:6px;
+    box-shadow:0 18px 40px -14px rgba(26,25,23,0.35), 0 2px 6px rgba(26,25,23,0.08);
+    transform-origin:bottom center;
+    transition:transform .6s cubic-bezier(.2,.8,.2,1);
+    border:1px solid rgba(0,0,0,0.06);
+  }
+  .swatch .label{
+    position:absolute; bottom:14px; left:14px; right:14px;
+    font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .s1{ background:linear-gradient(160deg,#FBFAF7,#EFEBE2); transform:translateX(-50%) rotate(-22deg); z-index:1; color:#8B8478;}
+  .s2{ background:linear-gradient(160deg,#F1EEE6,#D8D2C4); transform:translateX(-50%) rotate(-11deg); z-index:2; color:#71695A;}
+  .s3{ background:linear-gradient(160deg,#E7E2D6,#C9C1AE); transform:translateX(-50%) rotate(0deg); z-index:3; color:#544E42;}
+  .s4{ background:linear-gradient(160deg,#B9BDBE,#8D9294); transform:translateX(-50%) rotate(11deg); z-index:4; color:#F5F3EE;}
+  .s5{ background:linear-gradient(160deg,#3C3A36,#1A1917); transform:translateX(-50%) rotate(22deg); z-index:5; color:#C7CBCC;}
+  .swatch-stage:hover .s1{ transform:translateX(-50%) rotate(-34deg) translateY(-10px); }
+  .swatch-stage:hover .s2{ transform:translateX(-50%) rotate(-17deg) translateY(-6px); }
+  .swatch-stage:hover .s3{ transform:translateX(-50%) rotate(0deg) translateY(-14px); }
+  .swatch-stage:hover .s4{ transform:translateX(-50%) rotate(17deg) translateY(-6px); }
+  .swatch-stage:hover .s5{ transform:translateX(-50%) rotate(34deg) translateY(-10px); }
+  @media (max-width:940px){ .swatch-stage{ height:340px; } .swatch{ width:120px; height:270px; } }
+
+  /* ---------- Trust strip ---------- */
+  .strip{ background:var(--ink); color:var(--paper); padding:0; }
+  .strip .wrap{ display:grid; grid-template-columns:repeat(4,1fr); }
+  .strip .cell{ padding:38px 28px; border-right:1px solid rgba(255,255,255,0.12); }
+  .strip .cell:last-child{ border-right:none; }
+  .strip .num{ font-family:'Space Grotesk', sans-serif; font-size:34px; font-weight:700; color:var(--brass);}
+  .strip .lbl{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel-light); margin-top:6px;}
+  @media (max-width:760px){ .strip .wrap{ grid-template-columns:repeat(2,1fr); } .strip .cell{ padding:26px 20px; } }
+
+  /* ---------- Section headers ---------- */
+  .sec-head{ max-width:640px; margin-bottom:56px; }
+  .sec-head h2{ font-size:clamp(28px,3.6vw,42px); margin-top:16px; }
+  .sec-head p{ color:var(--ink-soft); margin-top:14px; font-size:16px; }
+
+  /* ---------- Products ---------- */
+  .products-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--line); border:1px solid var(--line);}
+  .pcard{ background:var(--paper-2); padding:36px 30px; transition:background .25s ease; }
+  .pcard:hover{ background:var(--paper); }
+  .pcard .chip{ width:44px; height:44px; border-radius:5px; margin-bottom:22px; }
+  .pcard h3{ font-size:19px; margin-bottom:10px; }
+  .pcard p{ font-size:14.5px; color:var(--ink-soft); }
+  @media (max-width:900px){ .products-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .products-grid{ grid-template-columns:1fr;} }
+
+  /* ---------- Why us ---------- */
+  .why{ background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .why-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:44px 40px; }
+  @media (max-width:820px){ .why-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .why-grid{ grid-template-columns:1fr;} }
+  .why-item .mark{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--brass); margin-bottom:10px; display:block;}
+  .why-item h4{ font-size:17px; margin-bottom:8px; }
+  .why-item p{ font-size:14.5px; color:var(--ink-soft); }
+
+  /* ---------- Process ---------- */
+  .process-list{ display:flex; flex-direction:column; }
+  .p-row{ display:grid; grid-template-columns:90px 1fr; gap:28px; padding:28px 0; border-top:1px solid var(--line); align-items:start;}
+  .process-list .p-row:last-child{ border-bottom:1px solid var(--line); }
+  .p-row .idx{ font-family:'IBM Plex Mono', monospace; font-size:14px; color:var(--brass-dark); padding-top:4px;}
+  .p-row h4{ font-size:19px; margin-bottom:6px; }
+  .p-row p{ color:var(--ink-soft); font-size:14.5px; max-width:600px; }
+
+  /* ---------- Gallery / swatch library ---------- */
+  .gallery{ background:var(--ink); color:var(--paper); }
+  .gallery .sec-head p{ color:var(--steel-light); }
+  .gallery .eyebrow{ color:var(--brass); }
+  .gallery .eyebrow::before{ background:var(--brass); }
+  .swlib-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+  @media (max-width:900px){ .swlib-grid{ grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .swlib-grid{ grid-template-columns:repeat(2,1fr);} }
+  .sw{ border-radius:4px; aspect-ratio:3/4; padding:14px; display:flex; align-items:flex-end; position:relative; overflow:hidden; }
+  .sw span{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.03em; position:relative; z-index:2;}
+  .sw::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35) 100%);}
+  .g1{ background:#F7F5F0; color:#3a372f;} .g2{ background:#EDE7DB; color:#3a372f;}
+  .g3{ background:#D7CDBA; color:#33291a;} .g4{ background:#B9AF9C; color:#241f16;}
+  .g5{ background:#8C877B; color:#F5F3EE;} .g6{ background:#6E7378; color:#F5F3EE;}
+  .g7{ background:#4A4E52; color:#F5F3EE;} .g8{ background:#2C2B29; color:#C7CBCC;}
+  .g9{ background:linear-gradient(135deg,#EAE6DC,#CFC7B4); color:#33291a;}
+  .g10{ background:linear-gradient(135deg,#3C3A36,#1A1917); color:#C7CBCC;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+  @media (max-width:860px){ .contact-grid{ grid-template-columns:1fr; gap:40px;} }
+  .contact-card{ background:var(--paper-2); border:1px solid var(--line); padding:40px; border-radius:3px; }
+  .contact-line{ display:flex; align-items:center; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); }
+  .contact-line:last-child{ border-bottom:none; }
+  .contact-line .ico{ width:38px; height:38px; border-radius:50%; background:var(--paper); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .contact-line .txt .k{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel);}
+  .contact-line .txt .v{ font-size:16.5px; margin-top:2px; }
+  .contact-line .txt a.v:hover{ color:var(--brass-dark); }
+
+  .form-field{ margin-bottom:18px; }
+  .form-field label{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--steel); display:block; margin-bottom:8px;}
+  .form-field input, .form-field textarea{
+    width:100%; padding:13px 14px; border:1px solid var(--line); background:var(--paper);
+    font-family:'Inter', sans-serif; font-size:14.5px; border-radius:2px; color:var(--ink);
+  }
+  .form-field input:focus, .form-field textarea:focus{ outline:2px solid var(--brass); outline-offset:1px; border-color:var(--brass); }
+  .form-field textarea{ resize:vertical; min-height:100px; }
+  .form-field input.invalid, .form-field textarea.invalid{ border-color:#B23B2E; outline:2px solid #B23B2E; outline-offset:1px; }
+  .field-error{ font-size:12.5px; color:#B23B2E; margin-top:6px; min-height:14px; font-family:'IBM Plex Mono', monospace; }
+  #formStatus{ font-size:13px; margin-top:14px; font-family:'IBM Plex Mono', monospace; color:var(--ink-soft); min-height:16px; }
+  #formStatus.success{ color:#3C7A4E; }
+  #enquirySubmit:disabled{ opacity:0.6; cursor:not-allowed; }
+
+  /* ---------- Footer ---------- */
+  footer{ background:var(--ink); color:var(--steel-light); padding:48px 0 30px; }
+  .foot-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,0.12); }
+  .foot-row .logo .name{ color:var(--paper); }
+  .foot-bottom{ display:flex; justify-content:space-between; padding-top:22px; font-size:12.5px; color:var(--steel); flex-wrap:wrap; gap:10px; }
+
+  /* reveal animation */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .swatch{ transition:none; }
+  }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">
+      <span class="name">SILVER SHINE PRODUCTS</span>
+      <span class="tag">Corian &amp; Acrylic Solid Surface</span>
+    </a>
+    <nav class="navlinks">
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#process">Process</a>
+      <a href="#gallery">Colours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="navcall">
+      <span class="phone">+91 87799 42023</span>
+      <a class="btn btn-primary" href="tel:+918779942023">Call Now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Mumbai · Est. Manufacturing Since 2000</span>
+        <h1>Twenty-five years of<br><em>seamless</em> solid surfaces.</h1>
+        <p class="lead">Silver Shine Products is a Mumbai-based manufacturer of Corian and acrylic solid surface sheets — trusted by architects, fabricators and homeowners for a quarter century of consistent quality.</p>
+        <div class="hero-ctas">
+          <a href="tel:+918779942023" class="btn btn-primary">Call Biswa Ranjan Das</a>
+          <a href="https://wa.me/918779942023" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        </div>
+        <div class="hero-meta">
+          <div>25 Years<br>In Business</div>
+          <div>Mumbai<br>Manufacturing Base</div>
+          <div>Custom<br>Colour Fabrication</div>
+        </div>
+      </div>
+      <div class="swatch-stage reveal">
+        <div class="fan">
+          <div class="swatch s1"><span class="label">Arctic White</span></div>
+          <div class="swatch s2"><span class="label">Ivory Sand</span></div>
+          <div class="swatch s3"><span class="label">Mumbai Taupe</span></div>
+          <div class="swatch s4"><span class="label">Steel Grey</span></div>
+          <div class="swatch s5"><span class="label">Graphite Noir</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="strip" style="padding:0;">
+    <div class="wrap">
+      <div class="cell"><div class="num">25+</div><div class="lbl">Years of Craft</div></div>
+      <div class="cell"><div class="num">100%</div><div class="lbl">Non-Porous Surface</div></div>
+      <div class="cell"><div class="num">Mumbai</div><div class="lbl">Manufacturing Unit</div></div>
+      <div class="cell"><div class="num">Custom</div><div class="lbl">Colour &amp; Size Runs</div></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What We Manufacture</span>
+        <h2>Solid surface, shaped for every space.</h2>
+        <p>From raw sheet stock to fully fabricated fixtures, every piece leaves our Mumbai facility inspected for colour consistency, thickness and finish.</p>
+      </div>
+      <div class="products-grid reveal">
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#FBFAF7,#E7E2D6);"></div>
+          <h3>Corian Solid Surface Sheets</h3>
+          <p>Our bestselling line — non-porous acrylic solid surface sheets in a wide range of colours and thicknesses, cut to order.</p>
+        </div>
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#E7E2D6,#B9AF9C);"></div>
+          <h3>Kitchen Countertops</h3>
+          <p>Seamlessly joined worktops with integrated sinks and backsplashes, fabricated to millimetre-accurate site dimensions.</p>
+        </div>
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#C7CBCC,#8D9294);"></div>
+          <h3>Wash Basins &amp; Vanities</h3>
+          <p>Moulded and thermoformed basin counters for homes, hotels and hospitals — hygienic, jointless, easy to clean.</p>
+        </div>
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#8C877B,#4A4E52);"></div>
+          <h3>Wall Cladding &amp; Panels</h3>
+          <p>Large-format acrylic panels for feature walls, hospital interiors and commercial facades with a flawless finish.</p>
+        </div>
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#3C3A36,#1A1917);"></div>
+          <h3>Reception &amp; Office Counters</h3>
+          <p>Sculpted, thermoformed reception desks and office surfaces built to carry a brand's identity in solid form.</p>
+        </div>
+        <div class="pcard">
+          <div class="chip" style="background:linear-gradient(160deg,#A9814B,#8B6A3A);"></div>
+          <h3>Custom Fabrication</h3>
+          <p>Bespoke shapes, inlays and colour-matched runs manufactured to architect and interior designer specifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Why Silver Shine</span>
+        <h2>Built for daily use. Backed by 25 years.</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-item">
+          <span class="mark">01</span>
+          <h4>Non-Porous &amp; Hygienic</h4>
+          <p>No pores for bacteria or moisture to sit in — ideal for kitchens, hospitals and washrooms.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">02</span>
+          <h4>Invisible Joints</h4>
+          <p>Sheets are fused, not just glued, so seams disappear into a single continuous surface.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">03</span>
+          <h4>Thermoformable</h4>
+          <p>Heat-moulded into curves and 3D forms without losing strength or finish.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">04</span>
+          <h4>Stain &amp; UV Resistant</h4>
+          <p>Holds colour and resists everyday staining, even under direct sunlight.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">05</span>
+          <h4>Renewable Finish</h4>
+          <p>Light scratches and dull patches can be sanded back to a factory-fresh finish.</p>
+        </div>
+        <div class="why-item">
+          <span class="mark">06</span>
+          <h4>Mumbai-Based Support</h4>
+          <p>Direct access to our factory and team for site visits, samples and after-sales help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How An Order Moves</span>
+        <h2>From consultation to installation.</h2>
+      </div>
+      <div class="process-list reveal">
+        <div class="p-row">
+          <div class="idx">01</div>
+          <div><h4>Consultation</h4><p>We understand your space, usage and budget — for homes, offices or commercial projects.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="idx">02</div>
+          <div><h4>Colour &amp; Sheet Selection</h4><p>Choose from our standard swatch library or request a custom-matched colour and thickness.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="idx">03</div>
+          <div><h4>Precision Fabrication</h4><p>Sheets are cut, jointed and thermoformed at our Mumbai unit to exact site measurements.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="idx">04</div>
+          <div><h4>Site Installation</h4><p>Our team fits the finished surface on-site with seamless jointing and edge finishing.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="idx">05</div>
+          <div><h4>After-Sales Support</h4><p>Guidance on care, plus repair and resurfacing support long after installation.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / COLOUR LIBRARY -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Colour Library</span>
+        <h2>A shade for every brief.</h2>
+        <p>A glimpse of our standard range — full physical swatches available at our Mumbai facility.</p>
+      </div>
+      <div class="swlib-grid reveal">
+        <div class="sw g1"><span>Arctic White</span></div>
+        <div class="sw g2"><span>Ivory Sand</span></div>
+        <div class="sw g3"><span>Warm Beige</span></div>
+        <div class="sw g4"><span>Mumbai Taupe</span></div>
+        <div class="sw g5"><span>Stone Grey</span></div>
+        <div class="sw g6"><span>Steel Grey</span></div>
+        <div class="sw g7"><span>Slate</span></div>
+        <div class="sw g8"><span>Graphite Noir</span></div>
+        <div class="sw g9"><span>Sandstone Blend</span></div>
+        <div class="sw g10"><span>Onyx Blend</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Talk to us about your project.</h2>
+        <p>Call, WhatsApp or send an enquiry — we typically respond the same day.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-line">
+            <div class="ico">☎</div>
+            <div class="txt"><div class="k">Contact Person</div><div class="v">Biswa Ranjan Das</div></div>
+          </div>
+          <div class="contact-line">
+            <div class="ico">✆</div>
+            <div class="txt"><div class="k">Phone</div><a class="v" href="tel:+918779942023">+91 87799 42023</a></div>
+          </div>
+          <div class="contact-line">
+            <div class="ico">⌾</div>
+            <div class="txt"><div class="k">WhatsApp</div><a class="v" href="https://wa.me/918779942023" target="_blank" rel="noopener">Message us directly</a></div>
+          </div>
+          <div class="contact-line">
+            <div class="ico">⌘</div>
+            <div class="txt"><div class="k">Location</div><div class="v">Mumbai, Maharashtra, India</div></div>
+          </div>
+          <div class="contact-line">
+            <div class="ico">◷</div>
+            <div class="txt"><div class="k">Working Hours</div><div class="v">Mon – Sat, 10:00 AM – 7:00 PM</div></div>
+          </div>
+          <div style="margin-top:26px; display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="tel:+918779942023" class="btn btn-brass">Call Now</a>
+            <a href="https://wa.me/918779942023" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="contact-card reveal" id="enquiryForm" novalidate>
+          <div class="form-field">
+            <label for="fname">Your Name</label>
+            <input id="fname" name="fname" type="text" placeholder="Enter your full name" required>
+            <div class="field-error" id="fname-error"></div>
+          </div>
+          <div class="form-field">
+            <label for="fphone">Phone Number</label>
+            <input id="fphone" name="fphone" type="tel" placeholder="Enter your phone number" required>
+            <div class="field-error" id="fphone-error"></div>
+          </div>
+          <div class="form-field">
+            <label for="fmsg">Your Requirement</label>
+            <textarea id="fmsg" name="fmsg" placeholder="Tell us about your sheet size, colour or project"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="enquirySubmit" style="width:100%; justify-content:center; border:none; cursor:pointer;">Send Enquiry via WhatsApp</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="#top" class="logo">
+        <span class="name">SILVER SHINE PRODUCTS</span>
+        <span class="tag">Corian &amp; Acrylic Solid Surface · Mumbai</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#process">Process</a>
+        <a href="#gallery">Colours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Silver Shine Products. All rights reserved.</span>
+      <span>Biswa Ranjan Das · +91 87799 42023 · Mumbai, India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  // ---------- Enquiry form: validates, then sends via WhatsApp ----------
+  const BUSINESS_WHATSAPP = "918779942023"; // Biswa Ranjan Das
+
+  const enquiryForm = document.getElementById('enquiryForm');
+  if (enquiryForm) {
+    const nameInput = document.getElementById('fname');
+    const phoneInput = document.getElementById('fphone');
+    const msgInput = document.getElementById('fmsg');
+    const nameError = document.getElementById('fname-error');
+    const phoneError = document.getElementById('fphone-error');
+    const status = document.getElementById('formStatus');
+    const submitBtn = document.getElementById('enquirySubmit');
+
+    function setError(input, errorEl, message){
+      if(message){
+        input.classList.add('invalid');
+        errorEl.textContent = message;
+      } else {
+        input.classList.remove('invalid');
+        errorEl.textContent = '';
+      }
+    }
+
+    function validatePhone(value){
+      const digits = value.replace(/[^0-9]/g, '');
+      return digits.length >= 10;
+    }
+
+    [nameInput, phoneInput].forEach(input=>{
+      input.addEventListener('input', ()=>{
+        if(input === nameInput) setError(nameInput, nameError, nameInput.value.trim() ? '' : '');
+        if(input === phoneInput) setError(phoneInput, phoneError, '');
+      });
+    });
+
+    enquiryForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.textContent = '';
+      status.classList.remove('success');
+
+      let valid = true;
+      if(!nameInput.value.trim()){
+        setError(nameInput, nameError, 'Please enter your name.');
+        valid = false;
+      } else {
+        setError(nameInput, nameError, '');
+      }
+
+      if(!validatePhone(phoneInput.value)){
+        setError(phoneInput, phoneError, 'Please enter a valid phone number.');
+        valid = false;
+      } else {
+        setError(phoneInput, phoneError, '');
+      }
+
+      if(!valid){
+        status.textContent = 'Please fix the highlighted fields.';
+        return;
+      }
+
+      const name = nameInput.value.trim();
+      const phone = phoneInput.value.trim();
+      const requirement = msgInput.value.trim() || 'No additional details provided.';
+
+      const message =
+        `New enquiry from the Silver Shine Products website:\n\n` +
+        `Name: ${name}\n` +
+        `Phone: ${phone}\n` +
+        `Requirement: ${requirement}`;
+
+      const waUrl = `https://wa.me/${BUSINESS_WHATSAPP}?text=${encodeURIComponent(message)}`;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Opening WhatsApp…';
+      status.classList.add('success');
+      status.textContent = 'Redirecting to WhatsApp to send your enquiry…';
+
+      window.open(waUrl, '_blank', 'noopener');
+
+      setTimeout(()=>{
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Enquiry via WhatsApp';
+        enquiryForm.reset();
+        status.textContent = 'Enquiry ready — complete sending it in the WhatsApp tab that opened.';
+      }, 900);
+    });
+  }
+</script>
+
+</body>
+</html>
